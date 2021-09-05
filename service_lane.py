@@ -8,14 +8,19 @@ def serviceLane(n, cases):
     # Write your code here
     lanes = []
     for item in cases:
-        #minW = n[min(item)]
-        #maxW = n[max(item)]
-        #print(n[item[0]:item[1]])
-        lanes.append(min(n[item[0]:item[1]]))
+        min_item = min(n[item[0]:item[1] + 1])
+        lanes.append(min_item)
     return lanes
-
-        # Check if any items in the list can pass through the
 
 
 if __name__ == '__main__':
-    print(serviceLane([2, 3, 1, 2, 3, 2, 3, 3], [[0, 3], [4, 6], [6, 7], [3, 5], [0, 7]]))
+    first_multiple_input = input().rstrip().split()
+    n = int(first_multiple_input[0])
+    t = int(first_multiple_input[1])
+    width = list(map(int, input().rstrip().split()))
+    cases = []
+    for _ in range(t):
+        cases.append(list(map(int, input().rstrip().split())))
+    result = serviceLane(width, cases)
+    print('\n'.join(map(str, result)))
+    print('\n')

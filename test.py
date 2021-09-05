@@ -1,2 +1,3 @@
-if 1 in range(0, 2):
-    print('TRUERS')
+list = [2, 2, 2, 1]
+
+print(min(list))
