@@ -42,7 +42,7 @@ def fairRations1(B):
                 B[a+1] += 1
         except:
             return 'NO'
-    return count
+    return str(count)
 
 
 if __name__ == '__main__':
