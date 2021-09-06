@@ -33,5 +33,17 @@ def fairRations(B):
             return 'No'
 
 
+def fairRations1(B):
+    count = 0
+    for a in range(len(B)):
+        try:
+            if B[a] % 2 != 0:
+                count += 2
+                B[a+1] += 1
+        except:
+            return 'NO'
+    return count
+
+
 if __name__ == '__main__':
-    print(fairRations([4, 5, 6, 7]))
+    print(fairRations1([4, 5, 6, 7]))
