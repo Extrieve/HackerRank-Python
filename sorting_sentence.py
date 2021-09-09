@@ -9,4 +9,5 @@ def sortSentence(s):
                 cleanstring += ' '
         return cleanstring
 
-print(sortSentence('is2 sentence4 This1 a3'))
+if __name__ == '__main__':
+    print(sortSentence('is2 sentence4 This1 a3'))
