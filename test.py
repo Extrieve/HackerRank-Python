@@ -1,3 +1,3 @@
-mylist = list(range(1, 11))
+mylist = ['a', 'A']
 
-print(mylist[0:5:-1])
+print(set(mylist))
