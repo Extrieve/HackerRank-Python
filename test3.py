@@ -1,3 +1,1 @@
-myarray = [1, 2, 3, 3]
-
-print(*myarray)
+print(abs(ord('a') - ord('b')))
