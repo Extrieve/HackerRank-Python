@@ -1,9 +1,9 @@
 def checkIfPan(sentence):
-    alphabet = dict()
+    alphabet = set()
 
     for letter in sentence:
         if letter not in alphabet:
-            alphabet[letter] = 1
+            alphabet.add(letter)
 
     return True if len(alphabet) > 25 else False
 
