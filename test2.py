@@ -1,3 +1,5 @@
-mylist = [[1, 2], 2, 3, 4]
+mydic = dict()
 
-print([1, 2] in mylist)
+mydic[(1, 2)] = 1
+
+print(mydic)
