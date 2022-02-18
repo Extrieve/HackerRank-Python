@@ -1,5 +1,3 @@
-mydic = dict()
+ab = 'abc'
 
-mydic[(1, 2)] = 1
-
-print(mydic)
+print(ab[:2])
