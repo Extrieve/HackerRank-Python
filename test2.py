@@ -1,3 +1,4 @@
 ab = 'abc'
+ab += 'a'
 
-print(ab[:2])
+print(ab)
