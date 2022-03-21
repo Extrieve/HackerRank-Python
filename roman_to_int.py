@@ -12,7 +12,7 @@ def romanToInt(s):
             else:
                 num += romans[s[i] + s[i+1]]
                 i += 2
-        except:
+        except IndexError:
             num += romans[s[-1]]
             break
     
