@@ -32,7 +32,7 @@ def min_brives1(q):
     return str(swaps)
 
 
-def min_brives2(q, n):
+def min_brives2(q):
 
     # og = list(range(1, n+1))
     swaps = 0
@@ -55,8 +55,7 @@ def min_brives2(q, n):
 
 if __name__ == '__main__':
     arr = [2, 1, 5, 3, 4]
-    print(min_brives2(arr, len(arr)))
+    print(min_brives2(arr))
 
-# 1 2 5 3 7 8 6 4
-# 1 2 3 4 5 6 7 8
-# 
+    # 1 2 5 3 7 8 6 4
+    # 1 2 3 4 5 6 7 8
