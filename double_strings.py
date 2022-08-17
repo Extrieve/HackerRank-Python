@@ -32,6 +32,20 @@ def d_string1(strings, length):
 
     return ''.join(output)
 
+def s_string2(strings):
+
+    output = []
+    available = set(strings)
+    for string in strings:
+        flag = False
+        for i in range(len(string)):
+            if string[i:] in available and string[:i] in available:
+                flag = True
+                break
+        output.append('0') if not flag else output.append('1')
+
+    return ''.join(output)
+
 
 if __name__ == '__main__':
     x = int(input())
@@ -43,4 +57,5 @@ if __name__ == '__main__':
         for _ in range(n):
             myinput.append(input())
 
-        print(d_string1(myinput, n))
+        # print(d_string1(myinput, n))
+        print(s_string2(myinput))
